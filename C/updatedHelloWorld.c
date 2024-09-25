@@ -7,6 +7,6 @@ int main(void){
     greeting("Jack\n");
     greeting("John\n");
     greeting("Bill\n");
-    greeting("Tom\n");
+    greeting("Tom");
     return 0;
 }
