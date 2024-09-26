@@ -4,11 +4,11 @@ def user_input(type):
     return input(f"How much is your {type}: ")
 
 
-income = int(user_input("income"))
-rent = int(user_input("rent"))
-utilities = int(user_input("utilities"))
-groceries = int(user_input("groceries"))
-transport = int(user_input("transportation"))
+income = float(user_input("income"))
+rent = float(user_input("rent"))
+utilities = float(user_input("utilities"))
+groceries = float(user_input("groceries"))
+transport = float(user_input("transportation"))
 expenses = float(utilities+groceries+transport+rent)
 savings = float((income-expenses)/3)
 spendings = float(income-expenses-savings)
