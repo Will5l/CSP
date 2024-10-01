@@ -1,9 +1,15 @@
 print("Welcome to your financial calculator\n")
+
+#Inputs
+
 income = float(input("What's your monthly income?: "))
 rent = float(input("What's your monthly rent?: "))
 utilities = float(input("What's your monthly utilities?: "))
 groceries = float(input("What's your monthly groceries?: "))
 transport = float(input("What's your monthly transportation costs?: "))
+
+#Calculatiing Percents
+
 expenses = float(utilities+groceries+transport+rent)
 savings = float((income-expenses)/3)
 spendings = float(income-expenses-savings)
@@ -13,6 +19,9 @@ pgrocieries = float(groceries/income * 100)
 ptransportation = float(transport/income * 100)
 psavings = float(savings/income * 100)
 pexpenses = float(expenses/income * 100)
+
+#Printing Percents
+
 print(f"Your monthly income is ${round(income,3)}\n")
 print(f"Your monthly expenses are ${round(expenses,3)}\n")
 print(f"Your monthly savings is ${round(savings,3)}\n")
