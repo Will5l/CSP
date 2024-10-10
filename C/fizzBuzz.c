@@ -1,12 +1,18 @@
 #include <stdio.h>
 
-int x;
-x = 0;
-int main(void){
- while(x<50)
-    x += 1;
-    if (x%3 == 0 && x%5 == 0 && x != 0)
-        printf("FizzBuzz");
+int xx;
 
+int main(void){
+ for(xx=1;xx<=50;xx++){
+        if (xx%3 == 0 && xx%5 == 0){
+            printf("FizzBuzz\n");
+        }else if (xx%3 == 0){
+            printf("Fizz\n");
+        }else if (xx%5 == 0){
+            printf("Buzz\n");
+        }else{
+            printf("%d\n", xx);
+        }
+ }
     return 0;
 }
